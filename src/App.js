@@ -2,6 +2,7 @@ import React , {useState,useEffect} from 'react';
 import './App.css';
 
 import Magazine from './Magazine';
+import logo from "./BT-Logo.jpg"
 
 function App() {
 
@@ -46,7 +47,12 @@ setSearch("")
 
   return (
     <div className="App">
-      <div className ="fixed-header"> Header </div>
+      <div className ="fixed-header"> 
+      <img  className = "logo"src={logo} alt = ""/>
+     
+      
+       </div>
+       <h1 className = "header-text">BT React Code Test - by Mursel  Aysan - 25/02/21</h1>
       <form onSubmit ={getSearch} className ="search-form">
         <input className ="search-bar" type ="text" value ={search} onChange = {updateSearch}/>
         <button  className ="search-button" type ="submit">Search</button>
