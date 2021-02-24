@@ -1,12 +1,13 @@
 import React , {useState,useEffect} from 'react';
 import './App.css';
+import Footer from './Footer';
 import Magazine from './Magazine';
 
 function App() {
 
   const APP_KEY = "8d8e00879669413c882aeca7eaab3997";
   
-  const[news,setNews] = useState([]);
+    const[news,setNews] = useState([]);
 
     const[search,setSearch] = useState("");
 
@@ -59,6 +60,7 @@ setSearch("")
         url = {item.url}
         />
       ))}
+      <Footer />
     </div>
   );
 }
