@@ -2,7 +2,7 @@ import React , {useState,useEffect} from 'react';
 import './App.css';
 
 import Magazine from './Magazine';
-import logo from "./BT-Logo.jpg"
+import logo from "./logo-2018.svg"
 
 function App() {
 
@@ -53,6 +53,7 @@ setSearch("")
       
        </div>
        <h1 className = "header-text">BT React Code Test - by Mursel  Aysan - 25/02/21</h1>
+
       <form onSubmit ={getSearch} className ="search-form">
         <input className ="search-bar" type ="text" value ={search} onChange = {updateSearch}/>
         <button  className ="search-button" type ="submit">Search</button>
@@ -67,7 +68,7 @@ setSearch("")
         url = {item.url}
         />
       ))}
-      <div className = "fixed-footer">Footer</div>
+      <div className = "fixed-footer"> <h3>© All rigths reserved | Mursel AYSAN</h3>  </div>
     </div>
   );
 }
