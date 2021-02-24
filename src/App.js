@@ -46,6 +46,7 @@ setSearch("")
 
   return (
     <div className="App">
+      <div className ="fixed-header"> Header </div>
       <form onSubmit ={getSearch} className ="search-form">
         <input className ="search-bar" type ="text" value ={search} onChange = {updateSearch}/>
         <button  className ="search-button" type ="submit">Search</button>
@@ -60,7 +61,7 @@ setSearch("")
         url = {item.url}
         />
       ))}
-      <Footer />
+      <div className = "fixed-footer">Footer</div>
     </div>
   );
 }
