@@ -18,7 +18,7 @@ function App() {
  },[query])
 
 const getNews = async() => {
-const response = await fetch(`https://newsapi.org/v2/everything?q=${query}&from=2021-02-24&sortBy=popularity&apiKey=${APP_KEY}`);
+const response = await fetch(`https://newsapi.org/v2/everything?q=${query}&from=2021-02-24&sortBy=popularity&pageSize=10&apiKey=${APP_KEY}`);
 const data = await response.json();
 
 setNews(data.articles);
