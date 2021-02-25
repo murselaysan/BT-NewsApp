@@ -5,7 +5,7 @@ import Header from './Header';
 import Magazine from './Magazine';
 
 function App() {
-	const APP_KEY = '8d8e00879669413c882aeca7eaab3997';
+	const APP_KEY = 'abc8d87d7c574af69335c90025f2638a';
 
 	const [ news, setNews ] = useState([]);
 
