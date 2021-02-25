@@ -38,7 +38,7 @@ function App() {
 		
 		e.preventDefault();
     if (search.trim() === '') return false
-		setQuery(search.toLowerCase);
+		setQuery(search);
 		setSearch('');
 	};
 
