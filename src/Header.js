@@ -5,7 +5,7 @@ const Header = (props) => {
     return (
         <div className="header">
             <div className="logo">
-                <a href="/"><img src={logo} alt="logo"/></a>
+                <a href="/"><img src={logo} alt="app-logo"/></a>
             </div>
             <div className="search">
                 <form onSubmit={props.getSearch}>

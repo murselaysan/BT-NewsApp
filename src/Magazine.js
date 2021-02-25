@@ -5,7 +5,7 @@ import './Magazine.css';
 export default function Magazine({ title, author, content, url, urlToImage }) {
 	return (
 		<div className="news">
-			<img className="news-image" src={urlToImage} alt="" />
+			<img className="news-image" src={urlToImage} alt="news-images" />
 			<h1 className="news-title">{title}</h1>
 			<p>{content.substring(0,150)+'...'}</p>
 			<p>Author : <span style={{'color': '#333333'}}>{author}</span></p>
