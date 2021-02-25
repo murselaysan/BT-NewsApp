@@ -1,10 +1,11 @@
 import React from 'react'
+import logo from "./logo-2018.svg"
 
 const Header = (props) => {
     return (
         <div className="header">
             <div className="logo">
-                <a href="/"><img src="https://img01.bt.co.uk/s/assets/040221/images/logo/logo-2018.svg" alt="logo"/></a>
+                <a href="/"><img src={logo} alt="logo"/></a>
             </div>
             <div className="search">
                 <form onSubmit={props.getSearch}>
